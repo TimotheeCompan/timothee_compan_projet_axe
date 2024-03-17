@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url(../img/fond.jpg) ;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.content1 {
+  display: none;
+}
+
+.content2 {
+  display: none;
+}
+
+.content3 {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20vh;
+  color: #ffffff;
+  font-size: 3vw;
+}
+
+.active {
+  display: block;
+  background-color: rgb(205, 205, 205);
+  color: black;
+  border: solid rgb(0, 0, 0) 5px;
+  width: 90%;
+}
+
+.tab-active {
+  background-color: gold;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  justify-content: center;
+  display: none;
+}
+
+.tab1 {
+  border: solid rgb(255, 255, 255) 2px;
+  color: #ffffff;
+  list-style-type: none;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+.tab2 {
+  border: solid rgb(255, 255, 255) 2px;
+  color: #ffffff;
+  list-style-type: none;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+.tab3 {
+  border: solid rgb(255, 255, 255) 2px;
+  color: #ffffff;
+  list-style-type: none;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+.tab1:hover {
+  background-color: gold;
+  color: rgb(0, 0, 0);
+}
+
+.tab2:hover {
+  background-color: gold;
+  color: rgb(0, 0, 0);
+}
+
+.tab3:hover {
+  background-color: gold;
+  color: rgb(0, 0, 0);
+}
+
+form {
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+}
+
+form > div {
+  margin: 2vw 2vh;
+  margin-left: 37vw;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+  background-color: wheat;
+}
+
+button {
+  margin-left: 46vw;
+  cursor: pointer;
+}
+
+.message-error {
+  border: 1px solid rgb(150, 4, 2);
+  color: rgb(253, 5, 5);
+  background-color: rgb(134, 4, 4);
+  padding: 16px 32px;
+  margin-bottom: 4vh;
+  display: none;
+}
+
+.message-success {
+  border: 1px solid rgb(12, 167, 50);
+  color: rgb(0, 0, 0);
+  background-color: rgb(12, 167, 50);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success {
+  background-color: green;
+}
+
+.defeat {
+  background-color: red;
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-error ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-error li {
+  list-style-type: disc;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+.cartes-griffon {
+  display: flex;
+  justify-content: space-around;
+}
+
+#Harry {
+  background-color: white;
+  width: 10vw;
+  height: 30vh;
+  text-align: center;
+  margin: 2%;
+}
+
+h5 {
+  text-align: center;
+  font-size: 200%;
+  color: #ffffff;
+}
+
+#character-container {
+  margin-top: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Style des éléments de film individuels */
+.film,
+.film-template {
+  background-color: #000000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(100% - 40px); /* Full width by default */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 20px; /* Add some space between cards */
+}
+
+.houses-logo {
+  width: 7vw;
+  max-height: 7vh;
+  object-fit: contain;
+  margin-left: 13vw;
+}
+
+.film-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.film:hover,
+.film-template:hover {
+  border-color: gold;
+}
+
+.film h2,
+.film-template h2,
+.film-template h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: 5vh;
+}
+
+.film p,
+.film-template p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.film a,
+.film-template a {
+  display: inline-block;
+  background-color: rgba(255, 217, 0, 0.856);
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  margin-left: 10vh;
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.film a:hover,
+.film-template a:hover {
+  background-color: #0056b3;
+}
+
+.card-bottom {
+  display: flex;
+}
+
+.heart {
+  width: 7vw;
+  height: 6vh;
+  object-fit: contain;
+  margin-top: 4vh;
+}
+
+/* Responsive Design Adjustments */
+@media (min-width: 600px) {
+  .film,
+  .film-template {
+    width: calc(50% - 40px); /* Adjust for tablets */
+  }
+  .houses-logo {
+    width: 7vw;
+    max-height: 7vh;
+    object-fit: contain;
+    margin-left: 30vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .film,
+  .film-template {
+    width: calc(33.333% - 40px); /* Adjust for desktops */
+  }
+
+  .houses-logo {
+    width: 7vw;
+    max-height: 7vh;
+    object-fit: contain;
+    margin-left: 19vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .film,
+  .film-template {
+    width: calc(25% - 40px); /* Adjust for larger screens */
+  }
+
+  .houses-logo {
+    width: 7vw;
+    max-height: 7vh;
+    object-fit: contain;
+    margin-left: 13vw;
+  }
+}

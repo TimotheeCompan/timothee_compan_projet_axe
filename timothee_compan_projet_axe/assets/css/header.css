@@ -1,0 +1,129 @@
+
+header {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: solid 2px;
+  border-color: gold;
+  
+}
+
+.pages ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 8vh;
+}
+
+.card-container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.pages a {
+  color: black;
+  font-size: 20px;
+  text-decoration: wavy;
+  text-align: center;
+  background-color: white;
+  border: thick double gold;
+  border-radius: 10px;
+  padding: 0.3vw;
+}
+
+.pages a:hover {
+  background-color: gold;
+  border-color: #000000;
+  border-radius: 15px;
+  transition-duration: 500ms;
+}
+
+h1 {
+  color: gold;
+  font-size: 200%;
+}
+
+.sidenav {
+  left: 0;
+  height: 100%;
+  width: 20vw;
+  position: fixed;
+  top: 0;
+  background-color: #000000;
+  padding-top: 60px;
+  display: none;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2vw;
+  align-items: center;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 2vh;
+}
+
+.sidenav a:hover {
+  color: gold;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.sideactive {
+  display: block;
+}
+
+/* Close btn */
+.sidenav .close {
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon {
+  margin: 10vw;
+}
+/* Icône burger */
+.burger-icon span {
+  display: none;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+.pages a {
+  font-size: 100%;
+}
+
+.Titre {
+  object-fit: contain;
+  width: 25vw;
+}
+
+.underTitle {
+  color: #ffffff;
+  font-size: 1.5vw;
+  margin-top: -2vh;
+  padding-bottom: 5vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger-icon span {
+    display: block;
+  }
+  .pages ul {
+    display: none;
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content=" IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <!-- ICI on va mettre du contenu avec le slider-->
+    <header>
+      <!-- ICI on va mettre notre navigation avec notre darkMode-->
+
+      <div class="pages">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="signup.html">Connexion</a></li>
+          <li><a href="signin.html">Inscription</a></li>
+        </ul>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">x</a>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="signup.html">Connexion</a></li>
+          <li><a href="signin.html">Inscription</a></li>
+        </ul>
+      </div>
+
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <section>
+        <img class="Titre" src="assets/img/Logo-Harry-Potter -t.png" alt="">
+        <div>
+          <p class="underTitle">L'aventure commence ici !</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- ICI on va mettre nos composants pour ouvrir un booster-->
+      <div class="booster-container"></div>
+      <!-- ICI on va mettre une tabulation filtrée par maisons-->
+      <div class="card-container">
+        <ul>
+          <li class="tab1" class="tab-Griffon" class="tab-active">
+            Griffon d'or
+          </li>
+          <li class="tab2" class="tab-Serpentards">Serpentards</li>
+          <li class="tab3" class="tab-Poufsouffles">Poufsouffles</li>
+        </ul>
+        <div class="content1" class="Griffon" class="active">
+          <div class="cartes-griffon">
+            <div id="Harry">
+              <p>Harry</p>
+            </div>
+            <div id="Ron">
+              <p>Ron</p>
+            </div>
+            <div id="Hermione">
+              <p>Hermione</p>
+            </div>
+            <div id="Dumbledore">
+              <p>Dumbledore</p>
+            </div>
+          </div>
+        </div>
+        <div class="content2" class="Serpentards">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            accusamus iste quis quas accusantium itaque ducimus modi. Saepe rem,
+            harum sed cupiditate sunt molestias accusantium maiores repellendus
+            tenetur iusto consequatur.
+          </p>
+        </div>
+        <div class="content3" class="Poufsouffles"></div>
+      </div>
+      <h1>Collectionne tes cartes préférées</h1>
+      <div id="character-container">
+      <div id="character-template" class="film" style="display: none;">
+        <img class="houses-logo" src="assets/img/unnamed.png" alt="">
+        <img
+          src="https://hp-api.lainocs.fr/images/harry-potter.png"
+          alt="harry-potter"
+          class="film-img"
+        />
+        <h2 class="film-title">Harry Potter</h2>
+        <p class="film-description">Gryffindor</p>
+        <div class="card-bottom">
+          <a class="film-details-link" href="details.html?id="
+          >Voir les détails</a
+          >
+          <img class="heart" src="assets/img/coeur.png" alt="">
+        </div>
+        
+      </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footerTop">
+            <div class="footerLeft">
+                <div id="titleFooterLeft">
+                    <p>Nous contacter</p>
+                </div>
+                <div>
+                    <p>+33 6 44 33 22 11</p>
+                </div>
+            </div>
+            <div class="footerMiddle">
+               <section>
+                    <h3>Merci de votre visite !</h3>
+               </section>
+               <div>
+                    <p>Revenez vite !</p>
+               </div>
+            </div>
+            <div class="footerRight">
+                 <section>
+                    <h4>lorem</h4>
+                </section>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi explicabo quae nulla ut possimus culpa perferendis voluptates animi iure obcaecati quo dolore, inventore libero nostrum id earum quidem minima deserunt nobis facilis quas provident voluptas ad? Dignissimos aspernatur expedita unde modi quia saepe dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique eius laboriosam ipsam molestiae beatae illum nemo ipsa error iusto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div>
+                <p>Suivez nous sur:</p>
+            </div>
+            <nav>
+                <img class="imagesFooter" src="assets/img/Instagram_icon.png" alt="instagramLogo">
+                <img class="imagesFooter" src="assets/img/facebook-logo-png-transparent-background.webp" alt="facebookLogo">
+                <img class="imagesFooter" src="assets/img/X_logo_2023_(white).png" alt="xLogo">
+            </nav>
+        </div>
+    </footer>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/card.js"></script>
+  </body>
+</html>

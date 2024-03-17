@@ -1,0 +1,15 @@
+-menu burger sur le coté
+-Bouton flottant a droite du site: fait un formulaire
+-système de carte favorite avec changement de couleurs
+-page détail de cartes
+-utiliser API harry potter
+-système de connexion :signin, signup
+-ouvrir un bosster depuis la home page
+-système de filtre de carte sur home page
+
+
+
+
+
+bonus: 
+-échange de cartes
